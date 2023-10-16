@@ -1,0 +1,323 @@
+
+#calc {
+    background-color: #0a122a;
+    padding-top: 6.5vh;
+    padding-bottom: 8vh;
+}
+
+
+#calc .input-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+#calc .form-group:nth-child(1), #calc .form-group:nth-child(2) {
+	width: 49%;
+}
+#calc .form-group {
+	margin: 0 0 6vh;
+}
+form .form-group {
+	position: relative;
+}
+label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+#calc .form-group label {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.8vh;
+}
+#calc .calc-input-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	position: relative;
+}
+
+
+#calc .amount_credit_input .calc-input-block, #calc .firstpay_credit_input .calc-input-block {
+	display: block;
+	position: relative;
+}
+
+.form-control {
+	display: block;
+	width: 100%;
+	height: calc(2.25rem + 2px);
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #777;
+	background-color: #fff;
+	background-clip: padding-box;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea {
+	-webkit-appearance: none;
+}
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, select, .form-control {
+	border: 1px solid;
+	outline: none;
+	box-shadow: none;
+	text-align: left;
+	line-height: 1.42857;
+	padding: 8px 12px;
+	font-size: .85rem;
+	vertical-align: middle;
+	height: auto;
+}
+
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea, .form-control, select {
+	background-color: #fff;
+	color: #777;
+	border-color: rgba(0,0,0,.09);
+}
+
+#calc .calc-input-block input, #calc .calc-input-block select {
+	width: 100%;
+	border-radius: 4px;
+	padding: 1.7vh;
+    font-size: 1.6vh;
+}
+
+
+#calc .form-group:nth-child(1), #calc .form-group:nth-child(2) {
+	width: 49%;
+}
+
+#calc .form-group label {
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.8vh;
+}
+
+.form-group::after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}   
+
+
+#calc .form-group:nth-child(3), #calc .form-group:nth-child(4), #calc .form-group:nth-child(5) {
+	width: 32%;
+}
+#calc .calc-input-block #afford-value {
+	color: #000;
+	font-weight: 600;
+}
+
+#calc .calc-input-block input, #calc .calc-input-block select {
+	width: 100%;
+	border-radius: 4px;
+	padding: 1.7vh;
+	font-size: 1.6vh;
+}
+.clearfix {
+	overflow: visible;
+}
+.clearfix::after {
+	display: block;
+	clear: both;
+	content: "";
+}
+
+*, ::before, ::after {
+	box-sizing: border-box;
+}
+#calc .output-list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: center;
+	margin-top: 4vh;
+	margin-bottom: 8vh;
+}
+
+#calc .output-list .calc-output__block-item {
+	width: 33%;
+}
+
+#calc .output-list .calc-item-title {
+	text-align: center;
+	color: #fff;
+	font-size: 1.6vh;
+	margin-bottom: 1.5vh;
+}
+#calc .output-list .calc-item-value {
+	font-size: 3.6vh;
+	font-weight: 700;
+	color: #d87c37;
+	text-align: center;
+}
+#calc .output-list .calc-output__block-item:nth-child(3) {
+	display: none;
+}
+
+#calc .calculate {
+	font-size: 1.8vh;
+	color: #fff;
+	font-weight: 600;
+	background-color: #d87c37;
+	border: none;
+	border-radius: 4px;
+	padding: 1.95vh 4.3vh;
+}
+.input-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2vh;
+}
+[hidden] {
+    display: none !important;
+}
+.form-group:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+/* new style */
+
+
+
+.calculator {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group,
+.result-group {
+    margin-bottom: 20px;
+}
+
+.input-group label,
+.result-item label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#property-cost-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+.noUi-horizontal {
+    height: 10px;
+
+}
+
+#rangeSlider {
+    height: 10px;
+}
+
+#rangeSlider .noUi-connects {
+    background: #D87C37;
+}
+
+#rangeSlider .noUi-handle {
+    height: 18px;
+    width: 18px;
+    top: -5px;
+    right: -9px; /* half the width */
+    border-radius: 9px;
+}
+
+
+.noUi-handle {
+    width: 20px; /* или любое другое значение, чтобы сделать его круглым */
+    height: 20px; /* или любое другое значение, чтобы сделать его круглым */
+    border: none;
+    background-color: white;
+    box-shadow: none;
+    border-radius: 50%;
+    top: -8px; /* подгоняем ползунок к центру дорожки */
+}
+
+.noUi-active {
+    box-shadow: none;
+}
+
+.noUi-touch-area {
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}

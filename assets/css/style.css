@@ -1,28 +1,14 @@
 
-#calc {
-    background-color: #0a122a;
-    padding-top: 6.5vh;
-    padding-bottom: 8vh;
-}
 
 
-#calc .input-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
+.calculator {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-#calc .form-group:nth-child(1), #calc .form-group:nth-child(2) {
-	width: 49%;
-}
-#calc .form-group {
-	margin: 0 0 6vh;
-}
 form .form-group {
 	position: relative;
 }
@@ -30,26 +16,8 @@ label {
 	display: inline-block;
 	margin-bottom: .5rem;
 }
-#calc .form-group label {
-	color: #fff;
-	font-weight: 500;
-	font-size: 1.8vh;
-}
-#calc .calc-input-block {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: space-between;
-	position: relative;
-}
 
 
-#calc .amount_credit_input .calc-input-block, #calc .firstpay_credit_input .calc-input-block {
-	display: block;
-	position: relative;
-}
 
 .form-control {
 	display: block;
@@ -86,23 +54,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 	border-color: rgba(0,0,0,.09);
 }
 
-#calc .calc-input-block input, #calc .calc-input-block select {
-	width: 100%;
-	border-radius: 4px;
-	padding: 1.7vh;
-    font-size: 1.6vh;
-}
 
-
-#calc .form-group:nth-child(1), #calc .form-group:nth-child(2) {
-	width: 49%;
-}
-
-#calc .form-group label {
-	color: #fff;
-	font-weight: 500;
-	font-size: 1.8vh;
-}
 
 .form-group::after {
 	content: ".";
@@ -113,73 +65,6 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
 	height: 0;
 }   
 
-
-#calc .form-group:nth-child(3), #calc .form-group:nth-child(4), #calc .form-group:nth-child(5) {
-	width: 32%;
-}
-#calc .calc-input-block #afford-value {
-	color: #000;
-	font-weight: 600;
-}
-
-#calc .calc-input-block input, #calc .calc-input-block select {
-	width: 100%;
-	border-radius: 4px;
-	padding: 1.7vh;
-	font-size: 1.6vh;
-}
-.clearfix {
-	overflow: visible;
-}
-.clearfix::after {
-	display: block;
-	clear: both;
-	content: "";
-}
-
-*, ::before, ::after {
-	box-sizing: border-box;
-}
-#calc .output-list {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	-ms-flex-pack: justify;
-	justify-content: center;
-	margin-top: 4vh;
-	margin-bottom: 8vh;
-}
-
-#calc .output-list .calc-output__block-item {
-	width: 33%;
-}
-
-#calc .output-list .calc-item-title {
-	text-align: center;
-	color: #fff;
-	font-size: 1.6vh;
-	margin-bottom: 1.5vh;
-}
-#calc .output-list .calc-item-value {
-	font-size: 3.6vh;
-	font-weight: 700;
-	color: #d87c37;
-	text-align: center;
-}
-#calc .output-list .calc-output__block-item:nth-child(3) {
-	display: none;
-}
-
-#calc .calculate {
-	font-size: 1.8vh;
-	color: #fff;
-	font-weight: 600;
-	background-color: #d87c37;
-	border: none;
-	border-radius: 4px;
-	padding: 1.95vh 4.3vh;
-}
 .input-list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -197,17 +82,11 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
     height: 0;
 }
 
-/* new style */
 
 
 
-.calculator {
-    max-width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-}
+
+
 
 h1 {
     text-align: center;
@@ -232,7 +111,8 @@ p {
 }
 
 input[type="number"],
-input[type="text"] {
+input[type="text"],
+.select-box select {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -320,4 +200,37 @@ button:hover {
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 50%;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+	display: none;
+}
+.margin-bottom-5 {
+	margin-bottom: 50px;
+}
+.margin-bottom-4 {
+	margin-bottom: 40px;
+}
+.margin-bottom-3 {
+	margin-bottom: 30px;
+}
+.text-center{
+	text-align: center;
+}
+.small {
+	font-size: 14px;
+}
+.result-item {
+	text-align: center;
+}
+#calculate {
+	display: inline-block;
+	width: auto;
+	padding: 8px 42px;
+
 }

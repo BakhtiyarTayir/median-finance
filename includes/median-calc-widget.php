@@ -28,55 +28,76 @@ class Median_Calc_Widget extends \Elementor\Widget_Base {
     }
 
     protected function render() {
-        // PHP-код, который вы хотите запустить, когда виджет отображается на веб-странице
+       
         ?>
         
         <div class="calculator">
-            <h1>Оформить ипотеку</h1>
-            <p>Мы можем вам всё посчитать</p>
-
-            <div class="input-group">
-                <label for="property-cost">Стоимость, Сум</label>
-                <input type="number" id="property-cost" placeholder="150 000 000 сумов">
-                <div id="rangeSlider"></div>
-            </div>
-
-            <div class="input-group">
-                <label for="property-size">Квадратура м2</label>
-                <input type="number" id="property-size" placeholder="30 м2">
-            </div>
-
-            <div class="input-group">
-                <label for="available-credit">Доступный ипотечный кредит</label>
-                <input type="text" id="available-credit" placeholder="145 350 000 сумов" readonly>
-            </div>
-
-            <div class="input-group">
-                <label for="loan-term">Срок кредита</label>
-                <input type="number" id="loan-term" placeholder="20 лет">
-            </div>
-
-            <div class="input-group">
-                <label for="interest-rate">Процентная ставка %</label>
-                <input type="number" id="interest-rate" placeholder="17">
-            </div>
-
-            <div class="result-group">
-                <div class="result-item">
-                    <label>Первоначальный взнос</label>
-                    <p id="initial-fee">4 650 000 сумов</p>
+            <div class="row margin-bottom-4">
+                
+                <div class="col-md-6">
+                    <div class="input-box select-box">
+                        <label for="term"><?php echo __('Credit term', 'median-finance'); ?></label>
+                        <select id="term">
+                            <option value="12"><?php echo __('12 months', 'median-finance'); ?></option>
+                            <option value="24"><?php echo __('24 months', 'median-finance'); ?></option>
+                        </select>
+                    </div>
                 </div>
-
-                <div class="result-item">
-                    <label>Ежемесячный платеж</label>
-                    <p id="monthly-payment">2 131 995 сумов</p>
+                <div class="col-md-6">
+                    <div class="input-box  select-box">
+                        <label for="property-cost"><?php echo __('Floor', 'median-finance'); ?></label>
+                        <select id="floor">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
                 </div>
             </div>
+            <div class="row margin-bottom-3">
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <label for="property-size"><?php echo __('Quadrature m2', 'median-finance'); ?></label>
+                        <input type="number"  id="area" value="32.62" placeholder="32,62 м2">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input-box">
+                        <label for="property-cost"><?php echo __('Cost, Sum', 'median-finance'); ?></label>
+                        <input type="text" id="property-cost" readonly placeholder="381 654 000  <?php echo __('soums', 'median-finance'); ?>" oninput="formatNumberInput(this)">
+                        <!-- <div id="rangeSlider"></div> -->
+                    </div>
+                </div>
+                
+                
+            </div>
+        
+            <div class="result-group row">
+                <div class="result-item col-md-6">
+                    <span class="small text-center" ><?php echo __('An initial fee', 'median-finance'); ?></span>
+                    <p id="initial-payment">114 496 200  <?php echo __('soums', 'median-finance'); ?> </p>
+                </div>
 
-            <button type="button" id="calculate">Получить ипотеку</button>
+                <div class="result-item col-md-6">
+                    <span class="small text-center"><?php echo __('Monthly payment', 'median-finance'); ?></span>
+                    <p id="monthly-payment">22 263 150  <?php echo __('soums', 'median-finance'); ?>   </p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <button type="button" id="calculate" onclick="calculate()"><?php echo __('Get a mortgage', 'median-finance'); ?></button>
+            </div>
+            
         </div>
             
         <?php
     }
 
 }
+
+
